@@ -5,7 +5,7 @@ const Body = Matter.Body;
 const Constraint = Matter.Constraint;
 
 var engine, world;
-
+var score;
 
 function setup() {
   createCanvas(800,400);
@@ -52,7 +52,7 @@ function draw() {
  
   background("grey");  
   text(mouseX+"-"+ mouseY,400,50)
-
+  text("SCORE :" + score,750,40);
   Engine.update(engine);
   stand.display();
 

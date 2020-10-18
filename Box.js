@@ -3,7 +3,7 @@ class Box {
       var options = {
           isStatic: true
       }
-      this.visibility = 225;
+      this.Visibility = 225;
       this.body = Bodies.rectangle(x,y,width,height,options);
       this.width = width;
       this.height = height;
@@ -26,4 +26,9 @@ class Box {
     }
   }
 
+  score(){
+    if(this.Visibility < 0 && this.Visibility>-1005){
+      score++;
+    }
+  }
   };
